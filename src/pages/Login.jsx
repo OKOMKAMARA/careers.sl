@@ -43,7 +43,7 @@ const Login = () => {
          placeholder="Password"
          className="form-control"
           />
-         {errors.password && <span>This field is required</span>}
+         {errors.password && <span>This field required</span>}
          </div>
        <div className='form-group'>
        <input 
