@@ -1,12 +1,15 @@
 import React from 'react'
 import { useForm } from "react-hook-form"
-import { FaEyeSlash } from "react-icons/fa"
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Login = () => {
   const { register, reset, handleSubmit, formState: {errors} } = useForm()
   const handleRegister = (data) => {
     console.log(data);
     reset()
+  }
+  function onChange(value) {
+    console.log("Captcha value:", value);
   }
   return (
     <form onSubmit={handleSubmit(handleRegister)}>
@@ -44,6 +47,12 @@ const Login = () => {
          />
         <label htmlFor='check-box'>keep me signed in</label>
         <p>Forgetten password?</p>
+        </div>
+        <div className="form-group">
+        <ReCAPTCHA
+    sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+    onChange={onChange}
+ />
         </div>
       <button type="submit">Login</button>
       <div>

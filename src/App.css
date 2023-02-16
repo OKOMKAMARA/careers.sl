@@ -38,17 +38,26 @@
 } */
 .nav {
   display: flex;
-  padding: 15px 0;
- position: relative;
+  position: relative;
   z-index: 3;
   background: #fff; 
   margin: 30px;
 }
 .nav-ul {
   display: flex;
-  padding:15px 0 ;
+  padding:15px 10px ;
   background: white;
+  margin: 15px;
   }
+  .nav-ul li {
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+  }
+  .nav-ul li a {
+    text-decoration: none;
+  }
+ 
   form {
     display: flex;
     flex-direction: column;
@@ -112,7 +121,7 @@ p, span {
   display: inline;
   position: relative;
   padding: 5.9rem;
-  left: 80px;
+  left: 95px;
  }
  
 
