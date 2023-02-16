@@ -12,6 +12,9 @@ const Navbar = () => {
                 <li><a href="https://careers.sl">Find out</a></li>
             </ul>
       </div>
+      <button>
+      <Login />
+      </button>
    </nav> 
             
   )

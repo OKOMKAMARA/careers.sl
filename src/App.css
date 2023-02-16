@@ -81,6 +81,7 @@
     width: 100%;
    
 }
+
 .form-control {
   display: flex;
   margin: 14px 0;
@@ -94,7 +95,8 @@
   background: #e0dddd;
   text-decoration: none;
   border: none !important;
-  }
+ }
+ 
 button  {
   color: #fff;
   border-color: red;
@@ -117,11 +119,14 @@ button:hover {
 input {
   margin: 0.4rem;
 }
-p, span {
+p {
   display: inline;
   position: relative;
   padding: 5.9rem;
   left: 95px;
+ }
+ span {
+  position: absolute;
  }
  
 

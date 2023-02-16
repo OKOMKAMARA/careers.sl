@@ -1,16 +1,19 @@
 import React from 'react'
 import { useForm } from "react-hook-form"
+import { FaEyeSlash } from "react-icons/fa"
 import ReCAPTCHA from "react-google-recaptcha";
+
 
 const Login = () => {
   const { register, reset, handleSubmit, formState: {errors} } = useForm()
   const handleRegister = (data) => {
     console.log(data);
     reset()
-  }
+  } 
   function onChange(value) {
     console.log("Captcha value:", value);
   }
+
   return (
     <form onSubmit={handleSubmit(handleRegister)}>
       <h1>Login to Careers SL</h1>
@@ -32,12 +35,14 @@ const Login = () => {
       </div>
       <div  className="form-group">
         <label htmlFor="password">Password</label>
+        <span>
+          <FaEyeSlash />
+        </span>
         <input
-         {...register("password", {required: true, maxLength: 15},)} 
+         {...register("password", {required: true, maxLength: 5},)} 
          placeholder="Password"
          className="form-control"
-         
-        />
+          />
          {errors.password && <span>This field is required</span>}
          </div>
        <div className='form-group'>
