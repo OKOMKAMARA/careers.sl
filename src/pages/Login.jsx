@@ -36,6 +36,7 @@ const Login = () => {
          {...register("password", {required: true, maxLength: 15},)} 
          placeholder="Password"
          className="form-control"
+         
         />
          {errors.password && <span>This field is required</span>}
          </div>

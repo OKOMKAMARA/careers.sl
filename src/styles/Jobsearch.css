@@ -1,0 +1,6 @@
+.widget-container {
+    display: flex;
+    left: 2px;
+    width: 100%;
+    max-width: 100%;
+}
